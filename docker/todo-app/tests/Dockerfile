@@ -1,6 +1,4 @@
 
-FROM node:14-alpine
-EXPOSE 3001
-ADD node_modules.tar.gz /
+FROM mjgargani/puppeteer:trybe1.0
 COPY ./ /
-CMD ["npm", "start"]
+CMD ["npm", "test"]
